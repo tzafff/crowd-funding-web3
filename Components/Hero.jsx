@@ -18,10 +18,31 @@ const Hero = ({ titleData, createCampaign }) => {
         }
     };
 
+    const coverLineStyle = {
+        width: '100%',
+        height: '2rem',
+        backgroundColor: '#fff',
+        position: 'absolute',
+        bottom: '-1.9rem',
+        zIndex: 3,
+    };
+
+     const backgroundStyle = {
+        backgroundColor: '#644df6',
+    };
+
+     const backgroundMainStyle = {
+        backgroundColor: '#1a1a1a',
+    };
+
+     const newColorStyle = {
+        color: '#1a1a1a',
+    };
+
     return (
         <div className="relative">
-            <span className="coverLine"></span>
-            <div className="relative bg-opacity-75 backgroundMain">
+            <span style={coverLineStyle}></span>
+            <div className="relative bg-opacity-75" style={backgroundMainStyle}>
                 <div className="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
                     <div className="flex flex-col items-center justify-between xl:flex-row">
                         <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
