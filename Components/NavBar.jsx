@@ -29,7 +29,7 @@ const NavBar = () => {
                 Company
               </span>
               </Link>
-              <ul className="flex items-center hidden space-x-8 lg:flex">
+              <ul className="flex items-center space-x-8 lg:flex">
                 {menuList.map((el, i) => (
                     <li key={i + 1}>
                       <Link

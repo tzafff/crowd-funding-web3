@@ -7,9 +7,9 @@ export default function App({ Component, pageProps }) {
   return (
       <>
         <CrowdFundingProvider>
-          <NavBar />
+          {/*<NavBar />*/}
           <Component {...pageProps} />
-          <Footer />
+          {/*<Footer />*/}
         </CrowdFundingProvider>
       </>
   );

@@ -51,27 +51,27 @@ const Index = () => {
       <>
         <Hero titleData={titleData} createCampaign={createCampaign}/>
 
-        <Card
-            title="All Listed Campaign"
-            allCampaign={allCampaign}
-            setOpenModal={setOpenModal}
-            setDonate={setDonateCampaign}
-        />
-        <Card
-            title="Your Created Campaign"
-            allCampaign={userCampaign}
-            setOpenModal={setOpenModal}
-            setDonate={setDonateCampaign}
-        />
+        {/*<Card*/}
+        {/*    title="All Listed Campaign"*/}
+        {/*    allCampaign={allCampaign}*/}
+        {/*    setOpenModal={setOpenModal}*/}
+        {/*    setDonate={setDonateCampaign}*/}
+        {/*/>*/}
+        {/*<Card*/}
+        {/*    title="Your Created Campaign"*/}
+        {/*    allCampaign={userCampaign}*/}
+        {/*    setOpenModal={setOpenModal}*/}
+        {/*    setDonate={setDonateCampaign}*/}
+        {/*/>*/}
 
-        {openModal && (
-            <PupUp
-                setOpenModal={setOpenModal}
-                getDonations={getDonations}
-                donate={donateCampaign}
-                donateFunction={donate}
-            />
-        )}
+        {/*{openModal && (*/}
+        {/*    <PupUp*/}
+        {/*        setOpenModal={setOpenModal}*/}
+        {/*        getDonations={getDonations}*/}
+        {/*        donate={donateCampaign}*/}
+        {/*        donateFunction={donate}*/}
+        {/*    />*/}
+        {/*)}*/}
       </>
   );
 };
