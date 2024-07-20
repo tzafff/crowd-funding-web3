@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext} from "react";
 import { CrowdFundingContext } from '@/Context/CroudFunding'
-import { Hero, Card, PupUp } from '../Components'
+import { Hero, Card, PupUp } from '../components'
 
 const Index = () => {
 
@@ -50,27 +50,27 @@ const Index = () => {
       <>
         <Hero titleData={titleData} createCampaign={createCampaign}/>
 
-        {/*<Card*/}
-        {/*    title="All Listed Campaign"*/}
-        {/*    allCampaign={allCampaign}*/}
-        {/*    setOpenModal={setOpenModal}*/}
-        {/*    setDonate={setDonateCampaign}*/}
-        {/*/>*/}
-        {/*<Card*/}
-        {/*    title="Your Created Campaign"*/}
-        {/*    allCampaign={userCampaign}*/}
-        {/*    setOpenModal={setOpenModal}*/}
-        {/*    setDonate={setDonateCampaign}*/}
-        {/*/>*/}
+        <Card
+            title="All Listed Campaign"
+            allCampaign={allCampaign}
+            setOpenModal={setOpenModal}
+            setDonate={setDonateCampaign}
+        />
+        <Card
+            title="Your Created Campaign"
+            allCampaign={userCampaign}
+            setOpenModal={setOpenModal}
+            setDonate={setDonateCampaign}
+        />
 
-        {/*{openModal && (*/}
-        {/*    <PupUp*/}
-        {/*        setOpenModal={setOpenModal}*/}
-        {/*        getDonations={getDonations}*/}
-        {/*        donate={donateCampaign}*/}
-        {/*        donateFunction={donate}*/}
-        {/*    />*/}
-        {/*)}*/}
+        {openModal && (
+            <PupUp
+                setOpenModal={setOpenModal}
+                getDonations={getDonations}
+                donate={donateCampaign}
+                donateFunction={donate}
+            />
+        )}
       </>
   );
 };
