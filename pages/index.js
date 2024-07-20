@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext} from "react";
-
-import { CrowdFundingContext } from '../Context/CroudFunding'
+import { CrowdFundingContext } from '@/Context/CroudFunding'
 import { Hero, Card, PupUp } from '../Components'
 
 const Index = () => {
